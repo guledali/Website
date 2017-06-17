@@ -149,49 +149,18 @@
         </div>
     </header>
 
-    <section class="mt-5">
-        <div class="container">
+    <?php
+           $db = mysqli_connect("localhost", "root","", "php-hemsida");
+           mysqli_query($db, "SET NAMES utf8");
 
-            <div class="accordion">
-                <ul class="list-unstyled">
-                    <li class="open js-question-wrapper">
-                        <div class="question">
-                            <h2>Will I be rich?</h2>
-                            <i class="fa fa-arrow-down" aria-hidden="true"></i>
-                        </div>
-                        <div class="answer">
-                            <p>Absolutely! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem dolorum
-                                dolore totam quo commodi sapiente in, libero, consectetur similique, labore non provident
-                                dolorem quibusdam quos, corporis facere est quod deserunt.</p>
-                        </div>
-                    </li>
-                    <li class="js-question-wrapper">
-                        <div class="question">
-                            <h2>What's for dinner?</h2>
-                            <i class="fa fa-arrow-down" aria-hidden="true"></i>
-                        </div>
-                        <div class="answer">
-                            <p>Whatever you want! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem dolorum
-                                dolore totam quo commodi sapiente in, libero, consectetur similique, labore non provident
-                                dolorem quibusdam quos, corporis facere est quod deserunt.</p>
-                        </div>
-                    </li>
-                    <li class="js-question-wrapper">
-                        <div class="question">
-                            <h2>Is JavaScript awesome?</h2>
-                            <i class="fa fa-arrow-down" aria-hidden="true"></i>
-                        </div>
-                        <div class="answer">
-                            <p>Yes! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem dolorum dolore
-                                totam quo commodi sapiente in, libero, consectetur similique, labore non provident dolorem
-                                quibusdam quos, corporis facere est quod deserunt.</p>
-                        </div>
-                    </li>
-                </ul>
-            </div>
+        $query = "SELECT content FROM page";
 
-        </div>
-    </section>
+        $result = mysqli_query($db, $query);
+        while($row = mysqli_fetch_assoc($result)){
+            echo  $row['content'];
+        }   
+
+    ?>
 
     
     <article class="container p-3">
