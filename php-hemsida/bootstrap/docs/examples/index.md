@@ -114,7 +114,7 @@ Brand new components and templates to help folks quickly get started with Bootst
       <img class="img-thumbnail" src="{{ site.baseurl }}/examples/screenshots/dashboard.jpg" alt="">
     </a>
     <h4>Dashboard</h4>
-    <p>Basic admin dashboard shell with fixed sidebar and navbar.</p>
+    <p>Basic login dashboard shell with fixed sidebar and navbar.</p>
   </div>
   <div class="col-6 col-md-4">
     <a href="{{ site.baseurl }}/examples/signin/">

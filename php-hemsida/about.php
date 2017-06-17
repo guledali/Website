@@ -7,10 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="../../bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
 
     <!-- Custom stylesheet -->
-    <link rel="stylesheet" href="../../public/assets/css/stylesheet.css">
+    <link rel="stylesheet" href="public/assets/css/stylesheet.css">
     <!--Specific page styling-->
 
     <!-- Icons for the accordion-->
@@ -18,14 +18,14 @@
         crossorigin="anonymous">
 
     <!-- Accordian styling -->
-    <link rel="stylesheet" href="../../public/assets/css/accordion.css">
+    <link rel="stylesheet" href="public/assets/css/accordion.css">
 
     <!--Specific page styling-->
     <style>
         body {
             /* Margin bottom by footer height */
             margin-bottom: 60px;
-            background-image: url('../../public/assets/img/transparent-2.jpg');
+            background-image: url('public/assets/img/transparent-2.jpg');
             background-size: cover;
             background-repeat: no-repeat;
             color: #5a5a5a;
@@ -135,32 +135,9 @@
 
 <body>
 
-    <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-        <a class="navbar-brand" href="../../index.html"><img src="../../public/assets/img/logo.png" width="30" height="30" alt="">
-  </a>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <div class="navbar-nav ml-auto">
-
-                <ul class="nav nav-pills flex-column flex-sm-row">
-                    <li class="nav-item">
-                        <a class="flex-sm-fill text-sm-center nav-link active link" href="about.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="flex-sm-fill text-sm-center nav-link text-info" href="contact.html">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="flex-sm-fill text-sm-center nav-link text-warning" href="admin.html">Admin</a>
-                    </li>
-                </ul>
-            </div>
-
-        </div>
-    </nav>
+   <?php
+        include 'includes/about.navbar.php';
+    ?>
 
 
 
@@ -171,7 +148,6 @@
             <h1 class="display-4">Let's learn more about me</h1>
         </div>
     </header>
-
 
     <section class="mt-5">
         <div class="container">
@@ -222,7 +198,7 @@
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner" role="listbox">
                 <div class="carousel-item active">
-                    <img class="img-fluid first-slide" src="../../public/assets/img/scoreboard.jpg">
+                    <img class="img-fluid first-slide" src="public/assets/img/scoreboard.jpg">
                     <div class="container">
                         <div class="carousel-caption d-none d-md-block text-left">
                               <a style="text-decoration: none;" href="https://github.com/guledali/React" target="_blank"><h4 class="display-3 text-info">Hate React!</h4></a>
@@ -230,7 +206,7 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img class="img-fluid second-slide" src="../../public/assets/img/style.jpg" alt="Second slide">
+                    <img class="img-fluid second-slide" src="public/assets/img/style.jpg" alt="Second slide">
                     <div class="container">
                         <div class="carousel-caption d-none d-md-block text-right">
                <a style="text-decoration: none;" href="https://github.com/guledali/daily-task" target="_blank"> <p class="text-success">Love flat designs</p></a>
@@ -238,7 +214,7 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img class="img-fluid third-slide" src="../../public/assets/img/todolist.jpg" alt="Third slide">
+                    <img class="img-fluid third-slide" src="public/assets/img/todolist.jpg" alt="Third slide">
                     <div class="container">
                         <div class="carousel-caption d-none d-md-block text-left">
                                 <a style="text-decoration: none;" href="https://github.com/guledali/dolist-example" target="_blank"> <p class="lead">Can make simple interactions through javascript</p></a>
@@ -262,14 +238,9 @@
 
 
 
-    <footer class="footer">
-        <div class="container text-center">
-            <a href="https://plus.google.com/u/0/102873376610745733364" target="_blank">
-    <img src="../../public/assets/img/Google+.svg" width="30" height="30" alt="Sharing link">
-    </a>
-            <span class="text-white">Copyright &copy; 2017</span>
-        </div>
-    </footer>
+<?php
+include ('includes/footer.php');
+?>
 
 
 
@@ -278,10 +249,10 @@
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
         crossorigin="anonymous"></script>
-    <script src="../../bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bootstrap/dist/js/bootstrap.min.js"></script>
 
     <!-- Script for the accordian app-->
-    <script src="../../public/assets/js/accordion.js"></script>
+    <script src="public/assets/js/accordion.js"></script>
 
 </body>
 
